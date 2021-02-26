@@ -1,0 +1,21 @@
+<div >
+    <ul class="nav menu">
+        <li class="item-101 parent">
+        <a [routerLink]="['/']">Home</a>
+        </li>
+        <li class="item-101 parent">
+            <a [routerLink]="['/skill']">Skill</a>
+        </li>
+        <li class="item-101 parent">
+            <a [routerLink]="['/portfolio']">Portfolio</a>
+        </li>
+        <li class="item-101 parent">
+            <a [routerLink]="['/contact']">Contact</a>
+        </li>
+    </ul>
+</div>
+<div class="container" style="margin-left: 50px; overflow:auto; height:40vw;width: 95vw;">
+    <router-outlet ></router-outlet>
+</div>
+<!-- <app-skilllist></app-skilllist> -->
+<!-- <app-portfolist></app-portfolist> -->

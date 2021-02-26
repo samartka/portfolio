@@ -1,0 +1,30 @@
+<div *ngIf="portfo.type!='work'">
+    <h2 *ngIf="portfo.type!='work'" style="color: blue;">Education</h2>
+    <span *ngIf="portfo.type!='work'">
+        <h2 *ngIf="portfo.year_to==2050"> {{portfo.where}}   : {{portfo.year_from}} - Present </h2>
+        <h2 *ngIf="portfo.year_to!=2050"> {{portfo.where}}   : {{portfo.year_from}} - {{portfo.year_to}} </h2>
+        <ul>
+            <li> Position : {{portfo.pos|titlecase}}</li>
+            <ul> Detail :
+                <li *ngFor="let d of portfo.detail" style="margin-left:15px;">{{d|titlecase}}</li>
+            </ul>
+        </ul>
+    </span>
+</div>
+<div *ngIf="portfo.type=='work'">
+    <h2 *ngIf="portfo.year_to==2050" style="color:orangered;">Work experience</h2>
+    <span *ngIf="portfo.type=='work'">
+        <h2 *ngIf="portfo.year_to==2050"> {{portfo.where}}   : {{portfo.year_from}} - Present </h2>
+        <h2 *ngIf="portfo.year_to!=2050"> {{portfo.where}}   : {{portfo.year_from}} - {{portfo.year_to}} </h2>
+        <ul>
+            <li> Position : {{portfo.pos|titlecase}}</li>
+            <ul> Detail :
+                <li *ngFor="let d of portfo.detail" style="margin-left:15px;">{{d|titlecase}}</li>
+            </ul>
+        </ul>
+    </span>
+
+</div>
+
+
+ <!-- {where:"Royal irrigation dapartment",year_from:1999,year_to:2000,pos:"Civil engineer",detail:["Structural design","Irrigation data analysis"],type:"work"} -->
