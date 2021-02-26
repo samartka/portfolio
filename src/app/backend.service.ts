@@ -21,6 +21,7 @@ export class BackendService {
       {name:"Power BI",desc:"Data visualization program",proficiency:"Good"},
       {name:"Tableau",desc:"Data visualization program",proficiency:"Moderate"},
       {name:"Power Query",desc:"Data management program",proficiency:"Good"},
+      {name:"R programming",desc:"Data management program",proficiency:"Moderate"},
     ]
   }
 
